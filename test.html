@@ -1,30 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Event Handling Example</title>
-  <script>
-    // Event listener for click on line 10
-    document.addEventListener('DOMContentLoaded', (event) => {
-      document.getElementById('myButton').addEventListener('click', () => {
-        console.log('Button was clicked!');
-      });
-    });
+<style>
+body {
+  margin-left: 200px;
+  background: #5d9ab2 url("img_tree.png") no-repeat top left;
+}
 
-    // Simulating long-running code
-    for (let i = 0; i < 1000000000; i++) {
-      // Line 20
-      if (i === 999999999) {
-        console.log('Loop completed');
-      }
-    }
-
-    // Line 40
-    console.log('Code execution reached the end');
-  </script>
+.center_div {
+  border: 1px solid gray;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  background-color: #d0f0f6;
+  text-align: left;
+  padding: 8px;
+}
+</style>
 </head>
 <body>
-  <button id="myButton">Click Me</button>
+
+<div class="center_div">
+  <h1>Hello World!</h1>
+  <p>This example contains some advanced CSS methods you may not have learned yet. But, we will explain these methods in a later chapter in the tutorial.</p>
+</div>
+
 </body>
 </html>
