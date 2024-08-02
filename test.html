@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Handling Example</title>
+  <script>
+    // Event listener for click on line 10
+    document.addEventListener('DOMContentLoaded', (event) => {
+      document.getElementById('myButton').addEventListener('click', () => {
+        console.log('Button was clicked!');
+      });
+    });
+
+    // Simulating long-running code
+    for (let i = 0; i < 1000000000; i++) {
+      // Line 20
+      if (i === 999999999) {
+        console.log('Loop completed');
+      }
+    }
+
+    // Line 40
+    console.log('Code execution reached the end');
+  </script>
+</head>
+<body>
+  <button id="myButton">Click Me</button>
+</body>
+</html>
